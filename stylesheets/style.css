@@ -8,6 +8,15 @@ body{
 	display: block;
 	justify-content: center;
 }
+header, .footercontent{
+	max-width: 1000px;
+}
+.footercontent{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+}
 a{
 	text-decoration: none;
 }
@@ -44,6 +53,15 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 }
+.width{
+	width: 100%;
+}
+.content{
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	display: flex;
+}
 main {
 	flex-direction: column;
 	align-items: center;
@@ -54,6 +72,9 @@ main {
 	padding: 0px 40px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.center{
+	text-align: center;
 }
 main-next{
 	display: flex;
@@ -107,7 +128,7 @@ nav{
 	align-items: center;
 	position: fixed;
 	flex-direction: column;
-	top: 77%;
+	top: 77.5%;
 	left: -100%;
 	width: 100%;
 	background-color: white;
@@ -136,7 +157,6 @@ nav{
 }
 .list{
 	width: 100%;
-	border-bottom: 2px solid #F1F1F1;
 	color: var(--Black, #191919);
 	text-align: center;
 	/* Button Text */
@@ -146,6 +166,9 @@ nav{
 	font-weight: 600;
 	line-height: 24px; /* 171.429% */
 	letter-spacing: 0.07px;
+}
+a.list{
+	border-bottom: 2px solid #F1F1F1;
 }
 .menu-btn, .contact-btn{
 	color: var(--Black, #191919);
@@ -505,6 +528,7 @@ footer{
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .white{
 	color:  white;
@@ -596,13 +620,18 @@ footer{
 		background-color: white;
 		transform: translateX(100%);
 	}
+	.hide{
+		display: none;
+	}
 	.contacts{
 		display: flex;
 	}
 	.list{
 		width: auto;
-		border-bottom: none;
 		margin-left: 10px;
+	}
+	a.list{
+		border-bottom: none;
 	}
 	.services {
 	width: 100%;
@@ -648,7 +677,7 @@ footer{
 	flex-direction: row;
 	justify-content: space-between;
 	}
-	.links >div{
+	.fl{
 	margin-right: 25px;
 	margin-bottom: 30px;
 	display: flex;
